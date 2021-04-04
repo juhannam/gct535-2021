@@ -39,10 +39,10 @@ Suppose that you are given a moving-average filter, y(n) = 0.25x (n) + 0.25x (n-
 
 1. Compute the transfer function, H(z)
 2. What are the zeros?  Display them on the z-plane.
-3. Plot the amplitude response using "freqz" function and discuss the result with zeros that you computed in 2).   
+3. Plot the amplitude response using the "freqz" function and discuss the result with zeros that you computed in 2).   
 
-Hint1) Polynomial factorization:  $1-z^{N} = (1-z)(1+ z 1+ z 2+ z 3+… +z^{N}-1)$,  
-Hint2) The roots of the equation, $z^{N} = 1$, are obtained by uniformly dividing the unit circle into N pieces uniformly on the z-plane. 
+Hint1) Polynomial factorization:  1-z^N = (1-z)(1+ z 1+ z 2+ z 3+… +z^(N-1))  
+Hint2) The roots of the equation, z^N = 1, are obtained by uniformly dividing the unit circle into N pieces uniformly on the z-plane. 
 
 
 ## Problem #3: IIR System (20 pts.)
@@ -50,7 +50,7 @@ Suppose that you are given a bi-quad filter, y(n) =  x(n) – x(n-2) + 0.9y(n-1)
 
 1. Compute the transfer function, H(z)
 2. What are the zeros and poles? Display them on the z-plane
-3. Plot the amplitude response using "freqz" function and discuss the result with poles and zeros that you computed.   
+3. Plot the amplitude response using the "freqz" function and discuss the result with poles and zeros that you computed.   
 
 
 ## Problem #4: Wind Sound (30 pts.)
