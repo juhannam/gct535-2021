@@ -41,7 +41,7 @@ Suppose that you are given a moving-average filter, y(n) = 0.25x (n) + 0.25x (n-
 2. What are the zeros?  Display them on the z-plane.
 3. Plot the amplitude response using the "freqz" function and discuss the result with zeros that you computed in 2).   
 
-Hint1) Polynomial factorization:  1-z^N = (1-z)(1+ z 1+ z 2+ z 3+… +z^(N-1))  
+Hint1) Polynomial factorization:  1 - z^N = (1 - z)(1 + z^1 + z^2 + z^3 + … + z^(N-1))  
 Hint2) The roots of the equation, z^N = 1, are obtained by uniformly dividing the unit circle into N pieces uniformly on the z-plane. 
 
 
