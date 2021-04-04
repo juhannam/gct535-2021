@@ -33,7 +33,7 @@ def my_conv(x,h):
 Submit the outputs as wav files with 16 bit and 44.1kHz sampling rate format (10pts.). 
 
 
-## Problem #2: FIR System (20 pts.)
+## Problem #2: FIR Filter (20 pts.)
 
 Suppose that you are given a moving-average filter, y(n) = 0.25x (n) + 0.25x (n-1) + 0.25x(n-2) + 0.25x(n-3).  
 
@@ -45,7 +45,7 @@ Hint1) Polynomial factorization:  1 - z^N = (1 - z)(1 + z^1 + z^2 + z^3 + … + 
 Hint2) The roots of the equation, z^N = 1, are obtained by uniformly dividing the unit circle into N pieces uniformly on the z-plane. 
 
 
-## Problem #3: IIR System (20 pts.)
+## Problem #3: IIR Filter (20 pts.)
 Suppose that you are given a bi-quad filter, y(n) =  x(n) – x(n-2) + 0.9y(n-1) - 0.81y(n-2)
 
 1. Compute the transfer function, H(z)
@@ -53,7 +53,7 @@ Suppose that you are given a bi-quad filter, y(n) =  x(n) – x(n-2) + 0.9y(n-1)
 3. Plot the amplitude response using the "freqz" function and discuss the result with poles and zeros that you computed.   
 
 
-## Problem #4: Wind Sound (30 pts.)
+## Problem #4: Wind Sound Design (30 pts.)
 We design a wind sound using white noise and a 2-pole resonant low-pass filter. The white noise can be generated using the “rand” function in Numpy. 
 
 1. Implement your own 2-pole resonant low-pass filter using the analog-filter-based biquad filter in the following form.
