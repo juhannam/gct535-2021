@@ -1,4 +1,4 @@
-# Homework #3: Due May 7
+# Homework #3: Due May 9
 
 ### Instruction
 The problem includes JUCE programming. You should use the JUCE framework for your own implementation of a plug-in.
