@@ -1,4 +1,4 @@
-# Homework #2: Due Apr 11
+# Homework #2: Convolution, FIR Filter, IIR Filter, and Windsound Design (Due Apr 11)
 
 ### Instruction
 
