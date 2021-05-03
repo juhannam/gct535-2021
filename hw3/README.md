@@ -1,4 +1,4 @@
-# Homework #3: Making an EQ Plug-In Using JUCE (Due May 9, 11:59 PM (Due May 9)
+# Homework #3: Making an EQ Plug-In Using JUCE (Due May 9)
 
 ### Instruction
 The problem includes JUCE programming. You should use the JUCE framework for your own implementation of a plug-in.
