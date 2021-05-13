@@ -1,14 +1,14 @@
-# Homework #3: Due May 9
+# Homework #3: Due May 7
 
 ### Instruction
 The problem includes JUCE programming. You should use the JUCE framework for your own implementation of a plug-in.
 
 Here are some *crucial* instruction to set up your JUCE environment. You have to set these up to build your EQTutorial project properly.
-1. You will need the older version of VST2 SDK to build this project. Please download VST SDK 3.6.10 here: https://web.archive.org/web/20181016150224/https://download.steinberg.net/sdk_downloads/vstsdk3610_11_06_2018_build_37.zip and add VST\_SDK/VST2\_SDK as the global path of VST (Legacy) SDK on Projucer. You can find the global path setting at Projucer\>Global Paths... on upper menu bar. If you still have problems to build, please 
+1. You will need the older version of VST2 SDK to build this project. Please download VST SDK 3.6.10 here: https://web.archive.org/web/20181016150224/https://download.steinberg.net/sdk_downloads/vstsdk3610_11_06_2018_build_37.zip and add VST\_SDK/VST2\_SDK as the global path of VST (Legacy) SDK on Projucer. You can find the global path setting at Projucer\>Global Paths... on upper menu bar.
 
 2. You have to set the paths to JUCE modules in Global Paths setting. Please set the global paths to JUCE and JUCE Modules as your path that you installed JUCE.
 
-3. You have to install Xcode (OS X) or Visual Studio (Windows) to build and compile the project. This project is tested on Xcode Version 12.4 (OS X) and Visual Studio 2019 (Windows 10).
+3. You have to install Xcode (macOS) or Visual Studio (Windows) to build and compile the project. This project is tested on Xcode Version 12.4 (macOS) and Visual Studio 2019 (Windows 10).
 
 4. If you're using Windows and Visual Studio 2019, you need to comment out some lines in the source code of Visual Studio to resolve error regarding to the copying files during the build. Lines can be found on 1480-1482, in 'Microsoft.CppCommon.targets', which can be found in C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160. If you can't find the lines or file, please check out the error message during the project build. 
 
@@ -19,15 +19,17 @@ You should submit following three items:
 <ul>
 <li>PluginProcessor.h</li>
 <li>PluginProcessor.cpp</li>
-<li>EQTutorial.vst or EQTutorial.component (OSX) | EQTutorial.dll (Windows)</li>
+<li>EQTutorial.vst or EQTutorial.component (macOS) | EQTutorial.dll (Windows)</li>
 </ul>
 
 Result plug-in files can be found in following directories. If you can't find them, please check https://docs.juce.com/master/tutorial_app_plugin_packaging.html for more information.
 <ul>
-<li>~/Library/Audio/Plug-Ins/VST/EQTutorial.vst (OSX)</li>
-<li>~/Library/Audio/Plug-Ins/Components/EQTutorial.component (OSX)</li>
+<li>~/Library/Audio/Plug-Ins/VST/EQTutorial.vst (macOS)</li>
+<li>~/Library/Audio/Plug-Ins/Components/EQTutorial.component (macOS)</li>
+<li>\(path to your EQ Tutorial Project)/Builds/MacOSX/build/Debug/EQTutorial.vst (macOS)</li>
+<li>\(path to your EQ Tutorial Project)/Builds/MacOSX/build/Debug/EQTutorial.component (macOS)</li>
 <li>C:\Program Files\VstPlugins\EQTutorial.dll (Windows)</li>
-<li>\(path to your EQ Tutorial Project)\Builds\VisualStudio2019\\EQTutorial.dll (Windows)</li>
+<li>\(path to your EQ Tutorial Project)\Builds\VisualStudio2019\build\Debug\EQTutorial.dll (Windows)</li>
 </ul>
 
 Please compress them as a single zip file named as '(student id)\_(name).zip' and submit it via KLMS. (e.g. 20210000\_JohnDoe.zip)
@@ -104,4 +106,4 @@ void EqtutorialAudioProcessor::updateCoefficients()
 ```
 \* Modify the relation between the user parameters and filter coefficients for the proper bi-quad EQ filter.
 
-4. Build the implementation and check out the result plug-in with DAW. Verify your results by comparison with the result from 'biquad.ipynb'.
+4. Build the implementation and check out the result plug-in with DAW. Verify your result by comparing it with the result from 'biquad.ipynb'.
