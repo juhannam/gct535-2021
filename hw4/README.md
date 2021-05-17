@@ -42,19 +42,19 @@ Please compress them as a single zip file named as '(student id)\_(name).zip' an
 
 3. Open the JUCE project file 'DelayTutorial.jucer' and build it. The feedforward delay is already implemented as 'processBlockDelay' function in 'PluginProcessor.cpp'. Load the result plug-in on DAW and check it.
 
-4. Implement a feedback delay as 'delay' function in '06. Delay-based Audio Effects.ipynb' by modifying below part in 'PluginProcessor.cpp'. You can easily adding the feedback loop to the implemented feedforward delay. Don't forget to consider the feedback gain. *You don't have to consider the LFO parameters for feedback delay. Please ignore them.*
+4. Implement a feedback delay based on 'delay' function in '06. Delay-based Audio Effects.ipynb' by modifying below part in 'PluginProcessor.cpp', but **with wet/dry coefficient** like the function of feedforward delay effect implemented in JUCE code. You can easily adding the feedback loop to the implemented feedforward delay. Don't forget to consider the feedback gain. *You don't have to consider the LFO parameters for feedback delay. Please ignore them.*
 
 ```
 void MyDelayAudioProcessor::processBlockDelay(AudioSampleBuffer& buffer, int totalNumInputChannels)
 ```
 
-5. Implement a chorus as 'chorus' function in '06. Delay-based Audio Effects.ipynb' by modifying below part in 'PluginProcessor.cpp'. 
+5. Implement a chorus as 'chorus' function in '06. Delay-based Audio Effects.ipynb', **with wet/dry coefficient** by modifying below part in 'PluginProcessor.cpp'. 
 
 ```
 void MyDelayAudioProcessor::processBlockChorus(AudioSampleBuffer& buffer, int totalNumInputChannels)
 ```
 
-6. Implement a chorus as 'chorus' function in '06. Delay-based Audio Effects.ipynb' by modifying below part in 'PluginProcessor.cpp'. 
+6. Implement a chorus as 'chorus' function in '06. Delay-based Audio Effects.ipynb', **with wet/dry coefficient**  by modifying below part in 'PluginProcessor.cpp'. 
 
 ```
 void MyDelayAudioProcessor::processBlockFlanger(AudioSampleBuffer& buffer, int totalNumInputChannels)
